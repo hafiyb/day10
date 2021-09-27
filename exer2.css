@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#container{
+    width: 512px;
+    height: 512px;
+    margin: 0 auto;
+    border: 1px solid black;
+    position: relative;
+    background-color: yellow;
+    z-index: 0;
+    overflow: hidden;
+}
+
+#layer1,#layer2,#layer3{
+    width: 1000px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: repeat-x;
+
+}
+#layer1{
+    background-image: url(images/landscape_layer_1.png);
+    z-index: 10;
+}
+#layer2{
+    background-image: url(images/landscape_layer_2.png);
+    z-index: 9;
+    top: -40px;
+}
+#layer3{
+    background-image: url(images/landscape_layer_3.png);
+    z-index: 8;
+    top: -80px;
+}
+#layer4{
+    background-image: url(images/landscape_layer_4.png);
+    z-index: 7;
+}
+
+#onion{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* z-index: 11; */
+}
